@@ -93,4 +93,26 @@
     //----------------------------------------------------------------
     "AttackDesire"        "1.5"   // How much bots want to attack them vs other non-hero things
   } 
+
+  "first_meal"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"                 "npc_dota_creature"
+    "Model"                     "models\particle\meteor.vmdl"
+    "ModelScale"                "0.2"
+    "Level"                     "1"
+    "HasInventory"              "0"
+    "StatusHealth"              "125" 
+    "StatusMana"                "0"
+    "UseNeutralCreepBehavior"   "0"
+    "AttackCapabilities"         "DOTA_UNIT_CAP_NO_ATTACK"
+
+    // Movement
+    "MovementCapabilities"        "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"               "522"       // Speed
+    "MovementTurnRate"            "1"       // Turning rate.
+    "BountyXP"                    "1000"
+  }
+
 }

@@ -1,59 +1,576 @@
 "DOTAHeroes"
 {
-  "npc_dota_hero_ancient_apparition_barebones"
+  "npc_dota_hero_wisp_primal"
   {
-    "AbilityLayout"     "6"
-    "override_hero"     "npc_dota_hero_ancient_apparition"
-    "SoundSet"          "0" 
-    "Ability1"        "example_ability" 
-    "Ability2"        "barebones_empty2" 
-    "Ability3"        "barebones_empty3" 
-    "Ability4"        "barebones_empty4"
-    "Ability5"        "barebones_empty5"
-    "Ability6"        "barebones_empty6"
-    "Ability7"        ""
-    "Ability8"        ""
-    "Ability9"        ""
-    "Ability10"       ""
-    "Ability11"       ""
-    "Ability12"       ""
-    "Ability13"       ""
-    "Ability14"       ""
-    "Ability15"       ""
-    "Ability16"       ""
+   // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "ModelScale"            "0.2"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "125" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"            "25"
+    "AttackDamageMax"            "25"  
+    "AttackRange"                "80" 
 
-    "ArmorPhysical"       "0"                 // Physical protection.
-    "MagicalResistance"       "0"                 // Magical protection (percentage).
-
-    "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
-    "AttackDamageMin"     "1"                   // Damage range min.
-    "AttackDamageMax"     "1"                   // Damage range max.
-
-    //"AttributePrimary"      "DOTA_ATTRIBUTE_STRENGTH"
-    "AttributeBaseStrength"   "0"                   // Base strength
-    "AttributeStrengthGain"   "0"                   // Strength bonus per level.
-    "AttributeBaseIntelligence" "0"                   // Base intelligence
-    "AttributeIntelligenceGain" "0"                   // Intelligence bonus per level.
-    "AttributeBaseAgility"    "0"                   // Base agility
-    "AttributeAgilityGain"    "0"                   // Agility bonus per level.
-
-    "BountyXP"          "0"                 // Experience earn.
-    "BountyGoldMin"       "0"                   // Gold earned min.
-    "BountyGoldMax"       "0"                   // Gold earned max.
-
-    //"BoundsHullName"      "DOTA_HULL_SIZE_HERO"
-    //"RingRadius"        "70"
-
-    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"       "360"                 // Speed.
-    "MovementTurnRate"      "1.0"                 // Turning rate.
-
-    "StatusHealth"        "1000"                 // Base health.
-    "StatusHealthRegen"     "0.0"                 // Health regeneration rate.
-    "StatusMana"        "400"                   // Base mana.
-    "StatusManaRegen"     "100.0"                 // Mana regeneration rate.
-
-    "VisionDaytimeRange"    "1800"                  // Range of vision at night time.
-    "VisionNighttimeRange"    "1800"                  // Range of vision at night time.
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_wisp"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_first_plant"
+    "Ability3"          "evolve_first_animal"
+    "Ability4"          "empty"
   }
+  "npc_dota_hero_enigma_primal"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models\items\enigma\eidolon\geodesic\geodesic.vmdl"
+    "ModelScale"            "0.5"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_enigma"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_trillobit"
+    "Ability3"          "evolve_cefalopod"
+    "Ability4"          "empty"
+  }
+
+  "npc_dota_hero_trillobit"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_ladybug001.vmdl"
+    "ModelScale"            "3"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_viper"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_mouse"
+    "Ability3"          "evolve_frog"
+    "Ability4"          "evolve_roach"
+  }
+  "npc_dota_hero_cefalopod"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models\courier\smeevil_crab\smeevil_crab.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_puck"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_fish"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+    "Ability5"          "empty"
+    "Ability6f"          "empty"
+  }
+
+  "npc_dota_hero_roach"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/heroes/weaver/weaver_bug.vmdl"
+    "ModelScale"            "1.5"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_dark_seer"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_spiderling"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+
+  "npc_dota_hero_spiderling"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/items/broodmother/spiderling/perceptive_spiderling/perceptive_spiderling.vmdl"
+    "ModelScale"            "0.5"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_antimage"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_spiderite"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+
+    "npc_dota_hero_spiderite"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "ModelScale"            "1.5"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_broodmother"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_firstnerub"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+
+    "npc_dota_hero_firstnerub"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_nyx_assassin"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_nerub"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+
+    "npc_dota_hero_frog"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_gameplay/frog.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_troll_warlord"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_lizard"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  } 
+
+    "npc_dota_hero_lizard"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_venomancer"
+    "Ability1"          "empty"
+    "Ability2"          "evolve_biglizard"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+
+     "npc_dota_hero_biglizard"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_big.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_arc_warden"
+    "Ability1"          "empty"
+    "Ability2"          "evolve_slardar"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+       "npc_dota_hero_slardar_primal"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_slardar"
+    "Ability1"          "empty"
+    "Ability2"          "evolve_slardar"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }
+  "npc_dota_hero_mouse"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_rat001.vmdl"
+    "ModelScale"            "1.5"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_bane"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "evolve_bear"
+    "Ability3"          "evolve_wolf"
+    "Ability4"          "evolve_firsthuman"
+  }
+"npc_dota_hero_bear"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/heroes/lone_druid/spirit_bear.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_bloodseeker"
+    "Ability1"          "make_den"
+    "Ability2"          "empty"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_bigbear"
+  }
+"npc_dota_hero_wolf"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/items/beastmaster/boar/fotw_wolf/fotw_wolf.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_chen"
+    "Ability1"          "make_den"
+    "Ability2"          "crit_passive"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_alfawolf"
+  }
+"npc_dota_hero_firsthuman"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_lone_druid"
+    "Ability1"          "make_shelter"
+    "Ability2"          "make_fireplace"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_human"
+  }
+"npc_dota_hero_human"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_rat001.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_dragon_knight"
+    "Ability1"          "make_shelter"
+    "Ability2"          "make_fireplace"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_human"
+  }  
+"npc_dota_hero_smartbear"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/items/lone_druid/true_form/form_of_the_atniw/form_of_the_atniw.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_juggernaut"
+    "Ability1"          "make_shelter"
+    "Ability2"          "make_fireplace"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_human"
+  }
+"npc_dota_hero_fish"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_fish002.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_axe"
+    "Ability1"          "swallow_primal_ability"
+    "Ability2"          "empty"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_murloc"
+  }  
+"npc_dota_hero_murloc"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_fish002.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_slark"
+    "Ability1"          "make_hut"
+    "Ability2"          "empty"
+    "Ability3"          "empty"
+    "Ability4"          "evolve_murloc2"
+  }
+"npc_dota_hero_murlocboss"
+  {
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_hero"
+    "Model"                 "models/props_wildlife/wildlife_fish002.vmdl"
+    "ModelScale"            "1"
+    "Level"                 "1"
+    "HasInventory"          "1"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttributeBaseStrength"        "0"
+    "StatusHealth"                "250" 
+    "StatusMana"                  "100" 
+    "StatusHealthRegen"           "5"
+    "AttackDamageMin"             "25"
+    "AttackDamageMax"             "25"  
+    "AttackRange"                 "80" 
+
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"      "4" 
+    "override_hero"     "npc_dota_hero_naga_siren"
+    "Ability1"          "make_hut"
+    "Ability2"          "empty"
+    "Ability3"          "empty"
+    "Ability4"          "empty"
+  }       
 }
+
